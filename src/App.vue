@@ -1,12 +1,16 @@
 <script setup>
 import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { CalendarCheck, Microscope, ScrollText, UserRound, BriefcaseMedical, Hash, Tablets, NotebookPen } from 'lucide-vue-next'
+import ToastContainer from './components/ToastContainer.vue'
+import ConfirmModal from './components/ConfirmModal.vue'
 
 const route = useRoute()
 const isActive = (path) => route.path.startsWith(path)
 </script>
 
 <template>
+  <ToastContainer />
+  <ConfirmModal />
 
   <header class="topbar">
     <div class="topbar-inner">

@@ -10,6 +10,9 @@ import MedicalHistoriesForm from '../views/medicalhistories/MedicalHistoriesForm
 import PatientsList from '../views/patients/PatientsList.vue'
 import PatientsForm from '../views/patients/PatientsForm.vue'
 import PatientsDetail from '../views/patients/PatientsDetail.vue'
+import DoctorsList from '../views/doctors/DoctorsList.vue'
+import DoctorsForm from '../views/doctors/DoctorsForm.vue'
+import DoctorsDetail from '../views/doctors/DoctorsDetail.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +35,11 @@ const router = createRouter({
     { path: '/patients/add', component: PatientsForm },
     { path: '/patients/:id', component: PatientsDetail },
     { path: '/patients/:id/edit', component: PatientsForm },
+
+    { path: '/doctors', component: DoctorsList },
+    { path: '/doctors/add', component: DoctorsForm },
+    { path: '/doctors/:id', component: DoctorsDetail },
+    { path: '/doctors/:id/edit', component: DoctorsForm },
 
   ],
 })

@@ -18,6 +18,9 @@ import ConsultsForm from '../views/consults/ConsultsForm.vue'
 import ConsultsDetail from '../views/consults/ConsultsDetail.vue'
 import ExamsList from '../views/exams/ExamsList.vue'
 import ExamsForm from '../views/exams/ExamsForm.vue'
+import PrescriptionsList from '../views/prescriptions/PrescriptionsList.vue'
+import PrescriptionsForm from '../views/prescriptions/PrescriptionsForm.vue'
+import PrescriptionsDetail from '../views/prescriptions/PrescriptionsDetail.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -55,6 +58,10 @@ const router = createRouter({
     { path: '/exams/add', component: ExamsForm },
     { path: '/exams/:id/edit', component: ExamsForm },
 
+    { path: '/prescriptions', component: PrescriptionsList },
+    { path: '/prescriptions/add', component: PrescriptionsForm },
+    { path: '/prescriptions/:id', component: PrescriptionsDetail },
+    { path: '/prescriptions/:id/edit', component: PrescriptionsForm },
   ],
 })
 

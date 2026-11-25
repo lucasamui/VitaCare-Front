@@ -13,6 +13,9 @@ import PatientsDetail from '../views/patients/PatientsDetail.vue'
 import DoctorsList from '../views/doctors/DoctorsList.vue'
 import DoctorsForm from '../views/doctors/DoctorsForm.vue'
 import DoctorsDetail from '../views/doctors/DoctorsDetail.vue'
+import ConsultsList from '../views/consults/ConsultsList.vue'
+import ConsultsForm from '../views/consults/ConsultsForm.vue'
+import ConsultsDetail from '../views/consults/ConsultsDetail.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -40,6 +43,11 @@ const router = createRouter({
     { path: '/doctors/add', component: DoctorsForm },
     { path: '/doctors/:id', component: DoctorsDetail },
     { path: '/doctors/:id/edit', component: DoctorsForm },
+
+    { path: '/consults', component: ConsultsList },
+    { path: '/consults/add', component: ConsultsForm },
+    { path: '/consults/:id', component: ConsultsDetail },
+    { path: '/consults/:id/edit', component: ConsultsForm },
 
   ],
 })

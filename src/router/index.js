@@ -16,6 +16,8 @@ import DoctorsDetail from '../views/doctors/DoctorsDetail.vue'
 import ConsultsList from '../views/consults/ConsultsList.vue'
 import ConsultsForm from '../views/consults/ConsultsForm.vue'
 import ConsultsDetail from '../views/consults/ConsultsDetail.vue'
+import ExamsList from '../views/exams/ExamsList.vue'
+import ExamsForm from '../views/exams/ExamsForm.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -48,6 +50,10 @@ const router = createRouter({
     { path: '/consults/add', component: ConsultsForm },
     { path: '/consults/:id', component: ConsultsDetail },
     { path: '/consults/:id/edit', component: ConsultsForm },
+
+    { path: '/exams', component: ExamsList },
+    { path: '/exams/add', component: ExamsForm },
+    { path: '/exams/:id/edit', component: ExamsForm },
 
   ],
 })
